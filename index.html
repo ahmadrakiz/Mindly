@@ -2,77 +2,36 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MindlyChat - طبيب نفسي افتراضي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>غرفة المحادثة - MindlyChat</title>
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #eef2f7;
-      color: #333;
-      text-align: center;
+      background-color: #f7f9fb;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
     }
 
-    header {
-      background: #4b4fa5;
-      color: white;
-      padding: 2rem 1rem;
+    h1 {
+      color: #4b4fa5;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    header p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-    }
-
-    main {
-      padding: 3rem 1rem;
-    }
-
-    .start-btn {
-      display: inline-block;
-      background: #4b4fa5;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .start-btn:hover {
-      background: #3a3f87;
-    }
-
-    footer {
-      margin-top: 4rem;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
+    .chat-note {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
+  <h1>غرفة المحادثة</h1>
+  <p class="chat-note">يتم تحميل المحادثة الآن... الرجاء الانتظار</p>
 
-  <header>
-    <h1>مرحبا بك في MindlyChat</h1>
-    <p>طبيبك النفسي الافتراضي متوفر 24/7 ليستمع إليك ويدعمك</p>
-  </header>
-
-  <main>
-    <h2>هل تشعر بالضغط أو القلق أو الحزن؟</h2>
-    <p>ابدأ محادثة سرية وآمنة الآن مع الدكتور ليلى</p>
-    <br />
-    <a href="chat.html" class="start-btn">ابدأ المحادثة</a>
-  </main>
-
-  <footer>
-    &copy; 2025 MindlyChat. جميع الحقوق محفوظة.
-  </footer>
-
+  <!-- سكربت Tidio للدردشة -->
+  <script src="//code.tidio.co/vpvcfor7uhzcf3wctmpc2kgwmtch3lfk.js" async></script>
 </body>
 </html>
